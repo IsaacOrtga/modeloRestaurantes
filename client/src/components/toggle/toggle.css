@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Buddah';
+    src: url('../../assets/fonts/Buddah.ttf');
+   
+}
+
+.navbar{
+    height: 100px;
+}
+
+.logo{
+    font-family: 'Buddah';
+
+}
+
+.expansion{
+    background-color: #212529;
+}
+
+.offcanvas-header{
+    background-color: #212529;
+
+}
+
+.btn-close{
+    background-color: white;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.navbar-toggler-icon{
+    background-color: #9da4a9;
+    
+}
+
+
+.collapsed{
+background-color: #212529;
+}
+

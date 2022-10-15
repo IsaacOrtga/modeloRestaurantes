@@ -1,0 +1,11 @@
+.imagenPortada{
+    background-image: url("../../assets/images/carrusel1.jpg");
+    background-attachment: fixed;
+    
+}
+
+.prueba{
+    margin-top: 800px;
+    background-color: black;
+    height: 400px;
+}
