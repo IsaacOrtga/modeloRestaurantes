@@ -1,44 +1,45 @@
 import Carousel from 'react-bootstrap/Carousel';
+import Car1 from '../../assets/images/car1.jpg';
+import Car2 from '../../assets/images/car2.jpg';
+import Car3 from '../../assets/images/car3.jpg';
+import './carrusel.css';
 
 function DarkVariantExample() {
   return (
-    <Carousel variant="dark" mx-auto>
+    <div className="contenedorCaru">
+    <Carousel className='carrusel' variant="dark" mx-auto>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Frestauracionnews.com%2F2022%2F04%2Fgrupo-isabellas-restaurante-carmina-barcelona%2F&psig=AOvVaw3dGMFBZ-ZdUZ5ybcBjRV5B&ust=1665938821858000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCNi9zO_X4voCFQAAAAAdAAAAABAO"
+          src={Car1}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=eee "
+          src={Car2}
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+          src={Car3}
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+         
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
   );
 }
 

@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Mom';
+    src: url(../../assets/fonts/Mom.ttf);
+}
+
+
 .imagenPortada{
     background-image: url("../../assets/images/carrusel1.jpg");
     background-attachment: fixed;
@@ -6,6 +12,15 @@
 
 .prueba{
     margin-top: 800px;
+    padding: 100px;
     background-color: black;
     height: 400px;
+}
+
+.prueba h2, p{
+    color: white;
+    font-family: 'Mom';
+    padding: 6px;
+    
+
 }

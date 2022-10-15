@@ -1,7 +1,9 @@
 import React from 'react'
-// import Carrousel from '../components/carrousel/Carrousel';
+import Carrousel from '../components/carrousel/Carrousel';
 import Toggle from '../components/toggle/Toggle';
 import Portada from '../components/portada/Portada';
+import Tarjetas from '../components/tarjetas/Tarjetas';
+
 
 
 
@@ -11,7 +13,8 @@ const Home = () => {
       
       <Toggle />
       <Portada />
-      {/* <Carrousel /> */}
+     <Carrousel /> 
+     <Tarjetas />
 
     </div>
   )
