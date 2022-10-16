@@ -25,6 +25,7 @@ const cupo = {
             let registered = new Cupo(countJson)
             registered.save(function (err, registered) {
                 res.json({ cupo: registered })
+                
             });
         };
       
@@ -38,6 +39,19 @@ const cupo = {
         
     },
 
-}
+    deleteCupo: async ( req, res ) => {
+
+        Cupo.deleteOne({ telefono: req.body.telefonoReg }, function (err) {
+            if(err) console.log(err);
+            console.log("Successful deletion");
+          });
+        
+
+
+    }
+   
+  }
+
+
 
 module.exports = cupo;
