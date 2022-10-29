@@ -39,6 +39,9 @@ const cupo = {
         
     },
 
+
+    /* Obtener por telefono */
+
     deleteCupo: async ( req, res ) => {
 
         Cupo.deleteOne({ telefono: req.body.telefonoReg }, function (err) {

@@ -14,7 +14,7 @@ function OffcanvasExample() {
   return (
     <>
       {['xxl'].map((expand) => (
-        <Navbar  key={expand} bg="dark" expand={expand} className="navbar mb-3">
+        <Navbar  key={expand} bg="dark" expand={expand} className="navbar">
           <Container fluid>
             <Navbar.Brand className="logo text-white ms-5 p-5" href="#">Restaurante Minerva</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -25,8 +25,11 @@ function OffcanvasExample() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}className="text-white" bg-dark>
-                  Restaurante Minerva
+                  Restaurante Minerva                  
+
                 </Offcanvas.Title>
+                <i class="bi bi-instagram"></i>
+
               </Offcanvas.Header>
               <Offcanvas.Body className='expansion' >
                 <Nav className="justify-content-end flex-grow-1 pe-3" bg="dark">

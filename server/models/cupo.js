@@ -10,7 +10,8 @@ const objectSchema = new mongoose.Schema({
     fecha: String
    
 });
-/* Ahora la BBDD llamada CUPO se llenara con el esquema de arriba */
+
+/* Ahora la BBDD llamada CUPO se llena con el esquema de arriba */
 const Cupo = mongoose.model('Cupo', objectSchema);
 
 module.exports = Cupo;

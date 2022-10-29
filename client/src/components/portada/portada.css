@@ -1,23 +1,25 @@
 @font-face {
     font-family: 'Mom';
     src: url(../../assets/fonts/Mom.ttf);
+   
 }
 
 
 .imagenPortada{
     background-image: url("../../assets/images/carrusel1.jpg");
     background-attachment: fixed;
-    
+    height: 600px;
+    width: 100vw;
 }
 
-.prueba{
-    margin-top: 800px;
+.welcomeContainer{
+  
     padding: 100px;
     background-color: black;
     height: 400px;
 }
 
-.prueba h2, p{
+.welcomeContainer h2, p{
     color: white;
     font-family: 'Mom';
     padding: 6px;

@@ -1,3 +1,18 @@
 .contenedorTarjetas{
 display: flex;
+width: 100vw;
+flex-direction: row;
+justify-content: center;
+
 }
+
+
+.contenedorTarjetas p {
+    color: black;
+    
+}
+
+.card{
+    width: 100%;
+}
+
