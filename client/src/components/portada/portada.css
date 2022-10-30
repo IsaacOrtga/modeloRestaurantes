@@ -9,15 +9,17 @@
     background-image: url("../../assets/images/carrusel1.jpg");
     background-attachment: fixed;
     height: 600px;
-    width: 100vw;
+    overflow: hidden;
 }
 
 .welcomeContainer{
   
-    padding: 100px;
+    padding-top: 100px;
     background-color: black;
     height: 400px;
 }
+
+
 
 .welcomeContainer h2, p{
     color: white;
@@ -26,3 +28,18 @@
     
 
 }
+
+.welcomeText{
+height: inherit;
+overflow: visible;
+}
+
+
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 600px) {
+   .iwelcomeContainer{
+    height: fit-content;
+   }
+  }

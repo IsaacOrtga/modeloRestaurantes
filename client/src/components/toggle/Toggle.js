@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
+
 import "./toggle.css";
 
 
@@ -25,11 +26,12 @@ function OffcanvasExample() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}className="text-white" bg-dark>
-                  Restaurante Minerva                  
+                  Restaurante Minerva 
+                  
+                                   
 
                 </Offcanvas.Title>
-                <i class="bi bi-instagram"></i>
-
+              
               </Offcanvas.Header>
               <Offcanvas.Body className='expansion' >
                 <Nav className="justify-content-end flex-grow-1 pe-3" bg="dark">

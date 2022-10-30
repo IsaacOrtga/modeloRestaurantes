@@ -1,17 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Modal from '../modal/Modal';
 import "./tarjetas.css"
 
+/* instalacion de aos con npm */
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+/* Dentro de la funcion de las tarjetas (WithHeaderExample)
+hay que meter el useEffect con AOS.init y AOS.refresh */
+
 
 function WithHeaderExample() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
+  /* Estarñia guay intentar meterlo en el popup */
 
   const [ show, setShow ] = useState( false )
 
   return (
-    <div className='contenedorTarjetas'>
-    <Card className='card'>
+    <div   className='contenedorTarjetas'>
+    <Card className='card' data-aos="fade-up">
       <Card.Header>Consultar carta</Card.Header>
       <Card.Body>
     
@@ -22,7 +35,7 @@ function WithHeaderExample() {
       </Card.Body>
     </Card>
 
-<Card className='card'>
+<Card className='card' data-aos="fade-up">
 <Card.Header>Horario</Card.Header>
 <Card.Body>
   <Card.Text>
@@ -38,7 +51,7 @@ Teléfono: 910 291 300</Card.Text>
 </Card.Body>
 </Card>
 
-<Card className='card'>
+<Card className='card' data-aos="fade-up">
       <Card.Header>RESERVAR</Card.Header>
       <Card.Body>
         <Card.Text className='mt-5'>

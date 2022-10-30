@@ -5,6 +5,36 @@
     justify-content: center; */
 }
 img{
-    height: 800px;
+    /* Esto es para hacer la imagen responsive */
+    width: 100%;
+    height: auto;
   
+}
+
+.card{
+    margin:20px
+}
+
+
+
+
+.w-100 {
+    width: inherit;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+        
+    .carousel-inner{
+
+        /* Hacer que los botones del carrousel sean responsive con respecto a la img. */
+        width: 100%;
+        height: auto;
+  }
+
+    .contenedorTarjetas{
+        flex-direction: column !important;
+        width: 90% !important;
+    }
 }

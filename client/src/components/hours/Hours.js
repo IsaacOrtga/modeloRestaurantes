@@ -1,13 +1,16 @@
 
-
+import './hours.css'
+import Button from 'react-bootstrap/Button';
 
 
 import React from 'react'
 
 function Hours() {
   return (
-    <div className='hoursSelect'><p>Seleccionar hora</p>
-
+    <div className='hoursSelect'>
+    
+    <p>Seleccionar hora</p>
+<div className='SelectSubmit'>
         <select name="hora" id="hora">
         <option value="12">De 12 a 13h</option>
         <option value="13">De 13 a 14h</option>
@@ -18,7 +21,8 @@ function Hours() {
         <option value="22">De 22 a 23h</option>
 
         </select>
-
+        <Button variant="dark">Reservar</Button> 
+</div>
 
 
 

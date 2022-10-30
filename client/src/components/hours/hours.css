@@ -1,3 +1,17 @@
+
+
+/* No consigo ponerle un margin-bottom de 2% o 30px... */
+
 .hoursSelect{
     
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 15px;
+
 }
+
+.hoursSelect p{
+    margin: 0;
+}
+
+

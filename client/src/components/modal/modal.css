@@ -8,6 +8,9 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: absolute;
+    margin-left: 90%;
+    margin-top: 1%;
 }
 
 a {
@@ -35,6 +38,7 @@ a {
   background-color: #fff;
   margin: 0 auto;
   width: 500px;
+  border-radius: 15px;
 }
 
 .calendarContainer {
@@ -64,3 +68,4 @@ li {
   font-weight: bold;
   text-align: center;
 }
+
