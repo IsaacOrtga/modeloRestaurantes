@@ -1,0 +1,8 @@
+/* MODELO DE LA RESERVA SEQUELEIZE
+
+id autoincremental PK
+fechas que pusimos desde react
+
+alias para llamarla directamente desde el controlador
+
+*/
