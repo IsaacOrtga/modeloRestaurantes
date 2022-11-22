@@ -4,7 +4,9 @@
 /* Que es lo que se necitaremos instalar para seguir con el back */
 const express = require("express");
 const router = require("./routes/routes");
-require("./database/mongo");
+//require("./database/mongo");
+require("./database/sql");
+
 const app = express();
 const path = require("path");
 app.use(express.json());

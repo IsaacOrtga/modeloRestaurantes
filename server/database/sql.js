@@ -1,17 +1,28 @@
 const Sequelize = require("sequelize");
+//para levantar una BBDD es tener antes un modelo.
+//Tengo que requerir el modelo
+const EaterModel = require('../models/eaters')
 
-const sequelize = new Sequelize(
-   'restaurant',
+
+
+const sequelize = new Sequelize('restaurant',
    'root',
    'root',
     {
-      host: 'localhost:127.0.0.1',
+      host: 'localhost',
       dialect: 'mysql'
     }
   );
 
-sequelize.authenticate().then(() => {
-   console.log('Connection has been established successfully with SQLSQLSQLSQLSQLSQLSQLSQLSQLSQLSQLSQLSQLSQLSQLSQLSQL.');
-}).catch((error) => {
-   console.error('Unable to connect to the database SQL: ', error);
-});
+
+  const Eater = EaterModel(sequelize, Sequelize);
+
+/* aQUI YA TENDRIA el modelo que puedo sincronizar con bbdd */
+  sequelize.sync({ force : false})
+  .then(() => {
+      console.log('modelo Eater sincronizado en tu BBDD')
+  });
+  
+module.exports = {
+   Eater
+}
