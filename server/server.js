@@ -1,10 +1,7 @@
-/* Para crear el backend, se crea un archivo js y se pone esto de la documentacion de NODE oficial. */
 
-/* npm -init: crea el node modules y los dos paquejes json.  */
-/* Que es lo que se necitaremos instalar para seguir con el back */
 const express = require("express");
 const router = require("./routes/routes");
-//require("./database/mongo");
+require("./database/mongo");
 require("./database/sql");
 
 const app = express();

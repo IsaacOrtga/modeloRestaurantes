@@ -10,7 +10,7 @@ mongoose.connect(bd, {
 })
 
 .then(() => {
-    console.log('Connection to Database is ready to rock!');
+    console.log('Connection to Database is ready in MONGO');
 })
 
 .catch((err) => {
