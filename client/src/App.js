@@ -4,6 +4,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import './App.css';
+import { Carta } from './components/menu/Carta';
 
 
 
@@ -14,7 +15,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Main />
+      {/* <Carta /> */}
+      <Main />
       </BrowserRouter>
     </div>
   );

@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -5,17 +6,20 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
+import Modal from '../modal/Modal';
 
 import "./toggle.css";
 
 
 function OffcanvasExample() {
   
+
+  const [ show, setShow ] = useState( false )
+
   return (
     <>
       {['xxl'].map((expand) => (
-        <Navbar  key={expand} bg="dark" expand={expand} className="navbar">
+        <Navbar key={expand} expand={expand} className="navbar">
           <Container fluid>
             <Navbar.Brand className="logo text-white ms-5 p-5" href="#">Restaurante Minerva</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -34,9 +38,9 @@ function OffcanvasExample() {
               
               </Offcanvas.Header>
               <Offcanvas.Body className='expansion' >
-                <Nav className="justify-content-end flex-grow-1 pe-3" bg="dark">
+                <Nav className="justify-content-end flex-grow-1 pe-3 navContent" >
                   <Nav.Link className="ms-5 text-white"  href="#action1">Inicio</Nav.Link>
-                  <Nav.Link className="ms-5 text-white" href="#action2">Reservar</Nav.Link>
+                  <Nav.Link className="ms-5 text-white" href="#action2" onClick={ () => setShow( true )}>Reservar</Nav.Link>
                   <Nav.Link className="ms-5 text-white" href="#action2">Nosotros</Nav.Link>
                   <Nav.Link className="ms-5 text-white" href="#action2">Contacto</Nav.Link>
                   
@@ -47,6 +51,7 @@ function OffcanvasExample() {
           </Container>
         </Navbar>
       ))}
+      <Modal onClose={() => setShow( false )} show = { show }/>
     </>
   );
 }

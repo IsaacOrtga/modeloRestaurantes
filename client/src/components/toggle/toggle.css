@@ -4,10 +4,15 @@
    
 }
 
+.navContent{
+    background: black;
+}
+
 *{
     box-sizing: border-box;
 }
 .navbar{
+    background: black;
     height: 100px;
 }
 
